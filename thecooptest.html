@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+<meta charset="utf-8" />
+<title>Responsive Image Maps jQuery Plugin</title>
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+img[usemap]{
+	border:solid;
+	height:auto;
+	max-width:100%;
+	width:auto;
+}
+</style>
+</head>
+
+<body>
+<div id="header">Chicken Little Ain't So Little No More<div id="weather"><a href="http://www.accuweather.com/en/us/pomona-ca/91766/weather-forecast/331974" class="aw-widget-legal"></a>
+
+<div id="awcc1478979948998" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1478979948998";"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script></div></div>
+
+<div class="sidenav">
+
+<img src="backyard.jpg" width="1024" height="768" usemap="#powerpuffgirls" alt="" />
+<map name="powerpuffgirls">
+		<area shape="rect" coords="0,0,500,500" href="#ppg" title="The Powerpuff Girls" alt="The Powerpuff Girls" />
+
+</map>
+</div>
+<div id="bodycontainer">
+	<div class="gallery">
+		<div id="picture"></div>
+		<div id="pause"><img src="pause.jpg"></div>
+	</div>
+	<div id="chickcontainer">
+
+		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)"  class="hoverimg" style="width:30%;height:30%;"><img src="chick1.jpg"><div class="overlay">
+			
+			<ul>
+				<li><strong>Helen</strong></li>
+				<li>Age: 1 month</li>
+				<li>Breed: Black Rock</li>
+				<li>Sex: Female</li>
+			</ul>
+		</div>
+		</div>
+		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)" class="hoverimg" style="width:30%;height:30%;"><img src="chick2.jpg"><div class="overlay">
+			
+			<ul>
+				<li><strong>Obama</strong></li>
+				<li>Age: 3 weeks</li>
+				<li>Breed: Black Rock</li>
+				<li>Sex: Female</li>
+			</ul>
+		</div>
+		</div>
+		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)" class="hoverimg" style="width:30%;height:30%;"><img src="chick3.jpg"><div class="overlay">
+			<ul>
+				<li><strong>Claire</strong></li>
+				<li>Age:2 weeks</li>
+				<li>Breed: Buff Orpington</li>
+				<li>Sex: Female</li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	
+
+
+
+	<div id="blog">
+		<button class="accordion">Do you live on a farm?</button>
+		<div class="panel">
+			<p>Yes! But not the kind of farm you're thinking of. We live in a residential area with a spacious backyard. Our farm was all dry clay before we started tilling it and developing it. We don't have a red barn door, but you'll see farm animals and vegetables growing in our backyard. </p>
+		</div>
+		<button class="accordion">When did you start farming?</button>
+		<div class="panel">
+			<p>We started farming this year. Previously I had gardened in the backyard, but nothing really grew since the clay baked soil was so stingy. However, we bought some fertile soil and created our own compost so now the vegetables are thriving. We've grown Asia Alpine cabbage, tomatoes, green beans, green onions and more!</p>
+		</div>		
+		<button class="accordion">Who should backyard farm?</button>
+		<div class="panel">
+			<p>If you love sinking your fingers into rich soil and handling animals, starting a farm is a great option. You also need space to plant your vegetables and good climate, so a lot of sun. You can also let your farm animals free range if you have enough space. </p>
+		</div>		
+		<button class="accordion">How can I start my own coop?</button>
+		<div class="panel">
+			<p>You can buy most of your equipment at Lowes or Home Depot. We made our coop and garden bed with scrap materials so if you have pieces of wood lying around, be creative! </p>
+		</div>		
+		<button class="accordion">What are the benefits of growing your own food?</button>
+		<div class="panel">
+			<p>There are great benefits like enjoying organic vegetables and watching your chickens grow.</p>
+		</div>
+		
+	</div>
+	</div>
+
+</div>
+
+<div class="footer">
+	<p>Follow me on Twitter <a href="https://twitter.com/edwardcox88">@edwardcox88</a> or email me at <a href="ejcox24@gmail.com">ejcox24@gmail.com</a></p>
+
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script src="TheCoop.js"></script>
+<script>
+
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+
+
+</body>
+</html>
+

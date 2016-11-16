@@ -1,0 +1,81 @@
+<!--<html>
+<head>
+<style>
+img[usemap]{
+	border:solid;
+	height:auto;
+	max-width:100%;
+	width:auto;
+}
+</style>
+</head>
+<body>
+
+<map name="backyard">
+    <area shape="rect" coords="0,0,1000,1000" href="https://www.spectacles.com/map/" alt="The garden"  />
+</map>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$('img[usemap]').rwdImageMaps();
+
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+});
+</script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Responsive Image Maps jQuery Plugin</title>
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<style>
+	body {
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	div {
+		width: 100%;
+	}
+	img[usemap] {
+		border: none;
+		height: auto;
+		max-width: 100%;
+		width: auto;
+	}
+	</style>
+</head>
+<body>
+<div>
+	<h1>Responsive Image Maps jQuery Plugin</h1>
+	<p>Allows image maps to be used in a responsive design by recalculating the area coordinates to match the actual image size on load and window.resize.</p>
+	<p><a href="https://github.com/stowball/jQuery-rwdImageMaps">Download the plugin from github</a></p>
+	<p>This image map was created in minutes with Adobe Fireworks.</p>
+	<img src="backyard.jpg" width="1024" height="768" usemap="#powerpuffgirls" alt="" />
+	<map name="powerpuffgirls">
+		<area shape="rect" coords="0,0,500,500" href="#ppg" title="The Powerpuff Girls" alt="The Powerpuff Girls" />
+</map>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	$('area').on('click', function() {
+		alert($(this).attr('alt') + ' clicked');
+	});
+});
+</script>
+</body>
+</html>
+

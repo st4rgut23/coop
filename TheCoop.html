@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="TheCoop.css">
+<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+<meta charset="utf-8" />
+<title>Responsive Image Maps jQuery Plugin</title>
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+img[usemap]{
+	border:solid;
+	height:auto;
+	max-width:100%;
+	width:auto;
+}
+</style>
+</head>
+
+<body>
+
+<div id="header"><div style="width:40%;display:inline-block">Chicken Little Ain't So Little No More</div><div id="weather"><a href="http://www.accuweather.com/en/us/pomona-ca/91766/weather-forecast/331974" class="aw-widget-legal"></a>
+
+<div id="awcc1478979948998" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1478979948998";"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script></div></div>
+
+<div class="sidenav">
+<h1>Time for a Treasure Hunt</h1>
+<h3>Here's an aerial view of our backyard. Try to guess what parts of the backyard you are clicking on in the blueprint. Bonus for finding the dog bowl on the 1st try!</h3>
+<img src="map_pic.png" style="width:100%;height:20%;padding:3px;">
+<img src="backyard.jpg" usemap="#powerpuffgirls" alt="" />
+<map name="powerpuffgirls">
+	<area shape="rect" coords="0,0,316,395" href="http://25.media.tumblr.com/tumblr_mazkczdOxx1qhwuq8o1_1280.jpg" title="" alt="garden" />
+	<area shape="rect" coords="79,839,158,938" href="http://25.media.tumblr.com/tumblr_mazkczdOxx1qhwuq8o1_1280.jpg" title="" alt="dogbowl" />
+	<area shape="rect" coords="0,1100,160,1760" href="" title="" alt="pool" />
+	<area shape="rect" coords="470,920,600,1760" href="" title="" alt="hill" />
+	<area shape="rect" coords="240,1420,430,1760" href="" title="" alt="shed" />
+	<area shape="rect" coords="470,0,600,380" href="" title="" alt="hilltop" />
+	<area shape="rect" coords="540,380,600,902" href="" title="" alt="fence" />
+	<area shape="rect" coords="460,465,530,830" href="" title="" alt="play" />
+	<area shape="rect" coords="300,545,460,770" href="" title="" alt="coop" />
+	<area shape="rect" coords="316,395,470,245" href="" title="" alt="stairs" />
+
+
+</map>
+<!--
+	<button class="sidebtn">Surrogate Mama Juno</button>
+	<button class="sidebtn">From Chicks to Chickens</button>
+	<button class="sidebtn">Garden Business</button>
+	<button class="sidebtn">Yajme</button>
+	<button class="sidebtn">Big Bad Predators</button>
+-->
+</div>
+
+<div id="bodycontainer">
+	<div class="gallery">
+		<div id="picture"></div>
+		<div id="pause"><img src="pause.jpg"></div>
+	</div>
+	<h1 style="text-align: center;top:30px;background-color:yellow">Featured Chicks of the Week!</h1>
+	<div id="chickcontainer">
+
+		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)"  class="hoverimg"><img src="goldenegg.jpeg"><div class="overlay">
+			
+			<ul>
+				<li><strong>Helen</strong></li>
+				<li>Age: 1 month</li>
+				<li>Breed: Black Rock</li>
+				<li>Sex: Female</li>
+			</ul>
+		</div>
+		</div>
+		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)" class="hoverimg"><img src="chick2.jpg"><div class="overlay">
+			
+			<ul>
+				<li><strong>Obama</strong></li>
+				<li>Age: 3 weeks</li>
+				<li>Breed: Black Rock</li>
+				<li>Sex: Female</li>
+			</ul>
+		</div>
+		</div>
+		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)" class="hoverimg"><img src="chick3.jpg"><div class="overlay">
+			<ul>
+				<li><strong>Claire</strong></li>
+				<li>Age:2 weeks</li>
+				<li>Breed: Buff Orpington</li>
+				<li>Sex: Female</li>
+			</ul>
+		</div>
+		</div>
+		</div>
+	
+
+
+	<h1 style="text-align: center;background-color:yellow">FAQ with the Chicken Farmer</h1>
+	<div id="blog">
+		<button class="accordion">Do you live on a farm?</button>
+		<div class="panel">
+			<p>Yes! But not the kind of farm you're thinking of. We live in a residential area with a spacious backyard. Our farm was all dry clay before we started tilling it and developing it. We don't have a red barn door, but you'll see farm animals and vegetables growing in our backyard. </p>
+		</div>
+		<button class="accordion">When did you start farming?</button>
+		<div class="panel">
+			<p>We started farming this year. Previously I had gardened in the backyard, but nothing really grew since the clay baked soil was so stingy. However, we bought some fertile soil and created our own compost so now the vegetables are thriving. We've grown Asia Alpine cabbage, tomatoes, green beans, green onions and more!</p>
+		</div>		
+		<button class="accordion">Who should backyard farm?</button>
+		<div class="panel">
+			<p>If you love sinking your fingers into rich soil and handling animals, starting a farm is a great option. You also need space to plant your vegetables and good climate, so a lot of sun. You can also let your farm animals free range if you have enough space. </p>
+		</div>		
+		<button class="accordion">How can I start my own coop?</button>
+		<div class="panel">
+			<p>You can buy most of your equipment at Lowes or Home Depot. We made our coop and garden bed with scrap materials so if you have pieces of wood lying around, be creative! </p>
+		</div>		
+		<button class="accordion">What are the benefits of growing your own food?</button>
+		<div class="panel">
+			<p>There are great benefits like enjoying organic vegetables and watching your chickens grow.</p>
+		</div>
+		
+	</div>
+</div>
+
+<div class="footer">
+	<p>Follow me on Twitter <a href="https://twitter.com/edwardcox88">@edwardcox88</a> or email me at <a href="ejcox24@gmail.com">ejcox24@gmail.com</a></p>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.rwdImageMaps.min.js"></script>
+<script src="TheCoop.js"></script>
+<script>
+
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+
+});
+</script>
+
+
+</body>
+</html>
+

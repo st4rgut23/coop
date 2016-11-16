@@ -1,0 +1,178 @@
+body{
+	font-family: 'Oxygen', sans-serif;
+}
+
+#header{
+	overflow-y:hidden;
+	width:100%;
+	display:inline-block;
+	font-size:50px;
+	background-color:yellow;
+	position:relative;
+	text-indent:20px;
+
+}
+#weather{
+	position:absolute;
+	top:0;
+	right:30px;
+}
+.sidenav{
+	height:1300px;
+	display:inline-block;
+	width:20%;
+	padding:10px;
+	margin-top:10px;
+	background-color:#d3d3d3;
+}
+
+.sidenav img{
+	width:100%;
+	height:1000px;
+
+}
+
+#bodycontainer{
+	position:absolute;
+	display:inline-block;
+	height:100%;
+	width:75%;
+	padding:10px;
+}
+
+.gallery{
+	text-align: center;
+	height:40%;
+	width:100%;
+	display:inline-block;
+	margin-top:50px;
+}
+
+#pause{
+	text-align:center;
+}
+
+#chickcontainer{
+	position:relative;
+	margin-top:20px;
+	width:100%;
+	height:auto;
+	display:flex;
+
+}
+
+#chickcontainer img{
+	top:25px;
+	left:50px;
+	position:relative;
+	width:80%;
+	height:100%;
+	display:inline-block;
+	margin-left:2%;
+	border-radius:100%;
+	border: solid .5px;
+
+}
+
+.overlay{
+	visibility:hidden;
+	position:relative;
+	left:10px;
+	bottom:100px;
+	text-align:center;
+	
+}
+
+.overlay ul{
+	list-style-type: none;
+}
+
+.hoverimg:hover img{
+	opacity:0.3;
+}
+
+.hoverimg{
+	width:30%;
+	height:30%;
+}
+/*
+.hoverimg:hover img{
+	opacity:.5;
+}*/
+
+
+
+.overlay.show{
+	visibility:visible;
+}
+
+
+
+
+#blog{
+	position:relative;
+	margin-bottom:100px;
+	display:inline-block;
+	width:100%;
+	height:40%;
+}
+
+#blog button{
+	padding:10px;
+	font-size:25px;
+	text-align:left;
+	width:100%;
+	display:block;
+	background-color:#66CD00;
+	border:none;
+	margin-bottom:1px;
+
+}
+
+.panel{
+	display:none;
+	background-color: #CCFFCC;
+	margin-left:10px;
+
+
+}
+
+.footer{
+	width:100%;
+	height:auto;
+	display:inline-block;
+	text-align:center;
+	overflow:hidden;
+	background-color: yellow;
+}
+
+.footer p{
+	text-align:center;
+	display:inline-block;
+	margin-bottom:20px;
+	font-size:25px;
+}
+/*
+.sidebtn{
+	display:block;
+	width:100%;
+	height:10%;
+}
+.sidebtn:hover{
+	background-color:#cccc00;	
+}
+*/
+#picture{
+	display:inline-block;
+	width:90%;
+	height:100%;
+}
+#picture img{
+	max-height:100%;
+	max-width:100%;
+}
+
+.panel.show{
+	display:block;
+}
+

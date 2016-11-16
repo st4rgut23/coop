@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "image-map",
+        "scope": null,
+        "escapedName": "image-map",
+        "name": "image-map",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/edcox"
+    ]
+  ],
+  "_from": "image-map@latest",
+  "_id": "image-map@1.0.3",
+  "_inCache": true,
+  "_location": "/image-map",
+  "_nodeVersion": "4.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/image-map-1.0.3.tgz_1472447619867_0.3272006823681295"
+  },
+  "_npmUser": {
+    "name": "clarketm",
+    "email": "travis.m.clarke@gmail.com"
+  },
+  "_npmVersion": "3.10.6",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "image-map",
+    "scope": null,
+    "escapedName": "image-map",
+    "name": "image-map",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/image-map/-/image-map-1.0.3.tgz",
+  "_shasum": "921557d53f8fd75028f9054301732d6c5075075a",
+  "_shrinkwrap": null,
+  "_spec": "image-map",
+  "_where": "/Users/edcox",
+  "authors": [
+    "clarketm <travis.m.clarke@gmail.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/clarketm/image-mapissues"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0"
+  },
+  "description": "Response, dynamic image maps",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "921557d53f8fd75028f9054301732d6c5075075a",
+    "tarball": "https://registry.npmjs.org/image-map/-/image-map-1.0.3.tgz"
+  },
+  "gitHead": "03b067a9480a6a80c56089fe2f6bcf138754ff9d",
+  "homepage": "https://www.travismclarke.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "image",
+    "map",
+    "image map",
+    "image-map",
+    "responsive",
+    "responsive image map",
+    "responsive image-map",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "license": "MIT",
+  "main": "image-map.min.js",
+  "maintainers": [
+    {
+      "name": "clarketm",
+      "email": "travis.m.clarke@gmail.com"
+    }
+  ],
+  "name": "image-map",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clarketm/image-map.git"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "version": "1.0.3"
+}
