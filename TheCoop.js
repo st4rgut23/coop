@@ -3,7 +3,7 @@ var slide=0 /* Gallery i is the tracker for every picture */
 var gallery = document.getElementById("picture")
 var accordion=document.getElementsByClassName("accordion")
 var pause = document.getElementById("pause")
-images=["blackchicken.jpg","bantamchicken.jpg","crazychicken.jpg"]
+images=["images/gallery1.jpg","images/gallery2.jpg","images/gallery3.jpg"]
 
 
 var state='play'
@@ -27,16 +27,17 @@ slideshow()
 function slideshow(){
 	console.log('working')
 	if( state == 'play'){
-
-		var pic='<img src="'+ images[slide]+'">'
-			gallery.innerHTML=pic
+		gallery.className+="fadeOut";
+		
+		setTimeout(function(){
+				gallery.src=images[slide];
+				gallery.className="";
+			},1000);
 			slide+=1;
-			console.log(slide)
 			if(slide==images.length){
 				slide=0
 			}
-			setTimeout(slideshow, 3000); 
-				
+			setTimeout(slideshow, 3000); 				
 		}
 	}
 

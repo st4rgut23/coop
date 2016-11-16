@@ -4,13 +4,12 @@
 <link rel="stylesheet" type="text/css" href="TheCoop.css">
 <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
 <meta charset="utf-8" />
-<title>Responsive Image Maps jQuery Plugin</title>
+<title>Chicken Little's Coop</title>
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="320" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
 img[usemap]{
-	border:solid;
 	height:auto;
 	max-width:100%;
 	width:auto;
@@ -20,9 +19,8 @@ img[usemap]{
 
 <body>
 
-<div id="header"><div style="width:40%;display:inline-block">Chicken Little Ain't So Little No More</div><div id="weather"><a href="http://www.accuweather.com/en/us/pomona-ca/91766/weather-forecast/331974" class="aw-widget-legal"></a>
-
-<div id="awcc1478979948998" class="aw-widget-current"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awcc1478979948998";"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script></div></div>
+<div id="header"><div style="width:40%;display:inline-block">Chicken Little Ain't So Little Any More</div><img src="chickenlittle.png" style="float:right;height:200px;">
+</div>
 
 <div class="sidenav">
 <h1>Time for a Treasure Hunt</h1>
@@ -30,16 +28,16 @@ img[usemap]{
 <img src="map_pic.png" style="width:100%;height:20%;padding:3px;">
 <img src="backyard.jpg" usemap="#powerpuffgirls" alt="" />
 <map name="powerpuffgirls">
-	<area shape="rect" coords="0,0,316,395" href="http://www.thoughtfulseniorgifts.com/wp-content/uploads/2014/10/Signature-Housewares-Paws-Dog-Bowl-Set-of-2-Bowls-with-Stand-Red-0-0.jpg" title="" alt="garden" />
-	<area shape="rect" coords="79,839,158,938" href="http://www.thoughtfulseniorgifts.com/wp-content/uploads/2014/10/Signature-Housewares-Paws-Dog-Bowl-Set-of-2-Bowls-with-Stand-Red-0-0.jpg" title="" alt="dogbowl" />
-	<area shape="rect" coords="0,1100,160,1760" href="http://img11.deviantart.net/2e26/i/2005/006/7/0/stairway_to_hell_by_shafik.jpg" title="" alt="pool" />
-	<area shape="rect" coords="470,920,600,1760" href="http://www.japan-guide.com/g10/destination_fujisan_top.jpgi" title="" alt="hill" />
-	<area shape="rect" coords="240,1420,430,1760" href="https://i.ytimg.com/vi/WDJNz7Xwfro/maxresdefault.jpg" title="" alt="shed" />
-	<area shape="rect" coords="470,0,600,380" href="http://www.skydivemidwest.com/assets/layout/homepage-tandem-2.jpg" title="" alt="hilltop" />
-	<area shape="rect" coords="540,380,600,902" href="http://binaryoptionschannel.com/wp-content/uploads/2014/01/fence.jpg" title="" alt="fence" />
-	<area shape="rect" coords="460,465,530,830" href="http://i.dailymail.co.uk/i/pix/2015/07/07/15/2A4BAE9B00000578-0-image-a-49_1436280662513.jpg" title="" alt="play" />
-	<area shape="rect" coords="300,545,460,770" href="http://1h7yv33zt02z321jlb1yt3ce.wpengine.netdna-cdn.com/wp-content/uploads/2014/10/ballard-chicken-coop.jpg" title="" alt="coop" />
-	<area shape="rect" coords="316,395,470,245" href="http://img11.deviantart.net/2e26/i/2005/006/7/0/stairway_to_hell_by_shafik.jpg" title="" alt="stairs" />
+	<area shape="rect" coords="0,0,316,395" href="images/garden.jpg" title="" alt="garden" />
+	<area shape="rect" coords="79,839,158,938" href="images/bowl.jpg" title="" alt="dogbowl" />
+	<area shape="rect" coords="0,1100,160,1760" href="images/pool.jpg" title="" alt="pool" />
+	<area shape="rect" coords="470,920,600,1760" href="images/hill_right.jpg" title="" alt="hill" />
+	<area shape="rect" coords="240,1420,430,1760" href="images/shed.jpg" title="" alt="shed" />
+	<area shape="rect" coords="470,0,600,380" href="images/hill_left.jpg" title="" alt="hilltop" />
+	<area shape="rect" coords="540,380,600,902" href="images/fence.jpg" title="" alt="fence" />
+	<area shape="rect" coords="460,465,530,830" href="images/play.jpg" title="" alt="play" />
+	<area shape="rect" coords="300,545,460,770" href="images/coop.jpg" title="" alt="coop" />
+	<area shape="rect" coords="316,395,470,245" href="images/stairs.jpg" title="" alt="stairs" />
 
 
 </map>
@@ -54,13 +52,12 @@ img[usemap]{
 
 <div id="bodycontainer" style="float:right">
 	<div class="gallery">
-		<div id="picture"></div>
+		<img id="picture" src="images/gallery1.jpg"></div>
 		<div id="pause"><img src="pause.jpg"></div>
-	</div>
 	<h1 style="text-align: center;top:30px;background-color:yellow">Featured Chicks of the Week!</h1>
 	<div id="chickcontainer">
 
-		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)"  class="hoverimg"><img src="goldenegg.jpeg"><div class="overlay">
+		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)"  class="hoverimg"><img src="images/feature1.jpg"><div class="overlay">
 			
 			<ul>
 				<li><strong>Helen</strong></li>
@@ -70,7 +67,7 @@ img[usemap]{
 			</ul>
 		</div>
 		</div>
-		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)" class="hoverimg"><img src="chick2.jpg"><div class="overlay">
+		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)" class="hoverimg"><img src="images/feature2.jpg"><div class="overlay">
 			
 			<ul>
 				<li><strong>Obama</strong></li>
@@ -80,7 +77,7 @@ img[usemap]{
 			</ul>
 		</div>
 		</div>
-		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)" class="hoverimg"><img src="chick3.jpg"><div class="overlay">
+		<div onmouseenter="hovereffect(this)" onmouseleave="disappear(this)" class="hoverimg"><img src="images/feature3.jpg"><div class="overlay">
 			<ul>
 				<li><strong>Claire</strong></li>
 				<li>Age:2 weeks</li>
@@ -90,7 +87,6 @@ img[usemap]{
 		</div>
 		</div>
 		</div>
-	
 
 
 	<h1 style="text-align: center;background-color:yellow">FAQ with the Chicken Farmer</h1>
