@@ -41,10 +41,6 @@ function slideshow(){
 	}
 
 
-
-
-
-
 var i;//accordion
 for (i=0; i<accordion.length; i++){
 	accordion[i].onclick=function(){
