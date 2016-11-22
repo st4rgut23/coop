@@ -30,7 +30,6 @@ body{
 #bodycontainer{
 	position:absolute;
 	display:inline-block;
-	height:100%;
 	width:75%;
 	padding:10px;
 }
@@ -76,21 +75,21 @@ body{
 	left:50px;
 	position:relative;
 	width:80%;
-	height:80%;
 	display:inline-block;
 	margin-left:2%;
 	border-radius:100%;
 	border:solid white;
+	margin-bottom:20px;
 
 }
 
 .overlay{
-	visibility:hidden;
 	position:relative;
 	left:10px;
-	bottom:100px;
+	bottom:150px;
+	display:none;
 	text-align:center;
-	
+	height:0px;	
 }
 
 .overlay ul{
@@ -99,8 +98,12 @@ body{
 	font-size:20px;
 }
 
+.hoverimg img{
+}
+
 .hoverimg:hover img{
 	opacity:0.3;
+	
 }
 
 .overlay.show{
@@ -130,7 +133,7 @@ body{
 .panel{
 	display:none;
 	background-color: #CCFFCC;
-	margin-left:10px;
+	padding: 10px;
 
 
 }
@@ -142,7 +145,12 @@ body{
 	display:inline-block;
 	text-align:center;
 	overflow:hidden;
-	background-color: yellow;
+	color:white;
+
+}
+.footer a{
+	text-decoration:none;
+	color:white;
 }
 
 .footer p{

@@ -3,7 +3,8 @@ var slide=0 /* Gallery i is the tracker for every picture */
 var gallery = document.getElementById("picture")
 var accordion=document.getElementsByClassName("accordion")
 var pause = document.getElementById("pause")
-images=["images/gallery1.jpg","images/gallery2.jpg","images/gallery3.jpg"]
+var chick = document.getElementById("chickcontainer")
+images=["images/gallery1.jpg","images/gallery2.jpg","images/gallery3.jpg","images/gallery4.jpg","images/gallery5.jpg"]
 
 
 var state='play'
@@ -22,7 +23,7 @@ pause.onclick=function(){
 	}
 }
 
-slideshow()
+window.onload = slideshow()
 
 function slideshow(){
 	console.log('working')
@@ -41,6 +42,18 @@ function slideshow(){
 		}
 	}
 
+function resize(){
+	console.log("window resized")
+if (window.innerWidth < 990){
+	console.log("block")
+	chickcontainer.style.display="block"
+}
+else {
+	console.log("flex")
+	chickcontainer.style.display="flex"
+}
+};
+
 
 var i;//accordion
 for (i=0; i<accordion.length; i++){
@@ -51,9 +64,9 @@ for (i=0; i<accordion.length; i++){
 
 function hovereffect(x){//chick profiles
 	console.log(x)
-	x.childNodes[1].style.visibility="visible"
+	x.childNodes[1].style.display="block"
 	}
 
 function disappear(y){
-	y.childNodes[1].style.visibility="hidden"
+	y.childNodes[1].style.display="none"
 }
