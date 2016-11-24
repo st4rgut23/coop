@@ -23,8 +23,6 @@ pause.onclick=function(){
 	}
 }
 
-window.onload = slideshow()
-
 function slideshow(){
 	console.log('working')
 	if( state == 'play'){
@@ -70,3 +68,5 @@ function hovereffect(x){//chick profiles
 function disappear(y){
 	y.childNodes[1].style.display="none"
 }
+
+window.onload = slideshow()
